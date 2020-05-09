@@ -1,4 +1,4 @@
-import numpy as np
+# import numpy as np
 
 from Enums import Compass
 from Room import Room
@@ -13,9 +13,25 @@ class Map:
         self.last_direction = None
 
     def move(self, direction):
-        self.last_direction = direction
+        illegal = self.__is_allowed_move(direction)
+        if illegal:
+            print("Illegal movement. Try going through one of the open doors")
+        else:
+            self.__change_coordinates(direction)
+            self.last_direction = direction
 
-        #TODO: guard against illegal movement
+            if (self.x, self.y) in self.rooms:
+                pass
+            else:
+                self.rooms[(self.x, self.y)] = Room(direction_from=direction)
+
+    def get_current_room(self):
+        return self.rooms[(self.x, self.y)]
+
+    def print_coordinates(self):
+        print("Coordinates: ({}, {})".format(self.x, self.y))
+
+    def __change_coordinates(self, direction):
         if direction == Compass.NORTH:
             self.y += 1
         elif direction == Compass.SOUTH:
@@ -25,13 +41,8 @@ class Map:
         elif direction == Compass.EAST:
             self.x += 1
 
-        if (self.x, self.y) in self.rooms:
-            pass
+    def __is_allowed_move(self, direction):
+        if direction in self.rooms[(self.x, self.y)].open_doors:
+            return False
         else:
-            self.rooms[(self.x, self.y)] = Room(direction_from=direction)
-
-    def get_current_room(self):
-        return self.rooms[(self.x, self.y)]
-
-    def print_coordinates(self):
-        print("Coordinates: ({}, {})".format(self.x, self.y))
+            return True
