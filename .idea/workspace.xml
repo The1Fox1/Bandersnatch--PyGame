@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="10874201-846b-4c35-8f41-d1c9752c523f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Enums.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/User_Input.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Map.py" beforeDir="false" afterPath="$PROJECT_DIR$/Map.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Room.py" beforeDir="false" afterPath="$PROJECT_DIR$/Room.py" afterDir="false" />
@@ -39,6 +37,37 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
+  <component name="RunManager">
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Bandersnatch" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="StructureViewFactory">
+    <option name="ACTIVE_ACTIONS" value=",SHOW_INHERITED" />
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -53,10 +82,46 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
+    <state width="634" height="438" key="DebuggerActiveHint" timestamp="1588658163906">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state width="634" height="438" key="DebuggerActiveHint/0.0.1280.720@0.0.1280.720" timestamp="1588658163906" />
     <state x="348" y="102" key="FileChooserDialogImpl" timestamp="1588200595175">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="348" y="102" key="FileChooserDialogImpl/0.0.1280.720@0.0.1280.720" timestamp="1588200595175" />
+    <state width="1237" height="176" key="GridCell.Tab.0.bottom" timestamp="1588994474818">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state width="1237" height="176" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1588994474818" />
+    <state width="1237" height="176" key="GridCell.Tab.0.center" timestamp="1588994474818">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state width="1237" height="176" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1588994474818" />
+    <state width="1237" height="176" key="GridCell.Tab.0.left" timestamp="1588994474818">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state width="1237" height="176" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1588994474818" />
+    <state width="1237" height="176" key="GridCell.Tab.0.right" timestamp="1588994474818">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state width="1237" height="176" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1588994474818" />
+    <state width="1237" height="220" key="GridCell.Tab.1.bottom" timestamp="1588710827679">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state width="1237" height="220" key="GridCell.Tab.1.bottom/0.0.1280.720@0.0.1280.720" timestamp="1588710827679" />
+    <state width="1237" height="220" key="GridCell.Tab.1.center" timestamp="1588710827679">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state width="1237" height="220" key="GridCell.Tab.1.center/0.0.1280.720@0.0.1280.720" timestamp="1588710827679" />
+    <state width="1237" height="220" key="GridCell.Tab.1.left" timestamp="1588710827679">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state width="1237" height="220" key="GridCell.Tab.1.left/0.0.1280.720@0.0.1280.720" timestamp="1588710827679" />
+    <state width="1237" height="220" key="GridCell.Tab.1.right" timestamp="1588710827679">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state width="1237" height="220" key="GridCell.Tab.1.right/0.0.1280.720@0.0.1280.720" timestamp="1588710827679" />
     <state x="121" y="0" key="SettingsEditor" timestamp="1588200662394">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
