@@ -6,9 +6,9 @@ from User_Input import UserInput
 MyMap = Map()
 
 while True:
+    print("_"*30)
     MyMap.print_coordinates()
     room = MyMap.get_current_room()
-    room.open_random_door()
     room.print_layout()
 
     user_input = input("Where do you go?")

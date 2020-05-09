@@ -7,13 +7,13 @@ class UserInput:
 
     @staticmethod
     def input_to_compass(user_input):
-        if user_input.lower() == 'w':
+        if user_input.casefold() == 'n':
             return Compass.NORTH
-        elif user_input.lower() == 'a':
+        elif user_input.casefold() == 'w':
             return Compass.WEST
-        elif user_input.lower() == 's':
+        elif user_input.casefold() == 's':
             return Compass.SOUTH
-        elif user_input.lower() == 'd':
+        elif user_input.casefold() == 'e':
             return Compass.EAST
         else:
             return None
