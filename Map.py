@@ -42,7 +42,7 @@ class Map:
             self.x += 1
 
     def __is_allowed_move(self, direction):
-        if direction in self.rooms[(self.x, self.y)].open_doors:
+        if direction in self.rooms[(self.x, self.y)].doors:
             return False
         else:
             return True
