@@ -19,7 +19,6 @@ class Map:
         else:
             self.__change_coordinates(direction)
             self.last_direction = direction
-
             if (self.x, self.y) in self.rooms:
                 pass
             else:
@@ -34,12 +33,16 @@ class Map:
     def __change_coordinates(self, direction):
         if direction == Compass.NORTH:
             self.y += 1
+            print("You move North")
         elif direction == Compass.SOUTH:
             self.y -= 1
+            print("You move South")
         elif direction == Compass.WEST:
             self.x -= 1
+            print("You move West")
         elif direction == Compass.EAST:
             self.x += 1
+            print("You move East")
 
     def __is_allowed_move(self, direction):
         if direction in self.rooms[(self.x, self.y)].doors:
