@@ -6,3 +6,9 @@ class Compass(Enum):
     WEST = "West"
     EAST = "East"
     SOUTH = "South"
+
+
+class Interaction(Enum):
+    INSPECT = 0
+    PICKUP = 1
+    USE = 2
